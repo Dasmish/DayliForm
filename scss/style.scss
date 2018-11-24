@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all .4s ease-in;
+}
+html{
+	font-size: 10px;
+	height: 100%;
+}
+body{
+	max-height: 100%;
+	font-size: 1.6rem;
+	font-family: 'Arial', sans-serif;
+	color: #3c4955;
+	background: linear-gradient(45deg, #ff512f 0%,#dd2476 50%,#dd2476 100%);
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 1140px;
+}
+
+.form{
+	height: 560px;
+	width: 570px;
+	background-color: #FFF;
+	margin: 120px auto;
+	padding: 30px 35px;
+	font-size: 0;
+	&__title{
+		font-size: 2.4rem;
+		font-weight: bold;
+		margin: 0 10px;
+	}
+	&__desc{
+		font-size: 1.3rem;
+		line-height: 1.6;
+		margin: 20px 0 20px 0;
+		
+	}
+	&__custom{
+		text-decoration: none;
+		color: #ea355a;
+		border-bottom: 1px solid transparent;
+		&:hover, &:focus, &:active{
+			border-color: #ea355a;
+		}
+	}
+	&__input{
+		background-color: #F0F0F0;
+		outline: none;
+		width: 48%;
+		font-size: 1.5rem;
+		border-radius: 7px;
+		padding: 15px 10px;
+		margin: 10px 0 20px 0;
+		border: 1px solid #f0f0f0;
+		&--large{
+			width: 100%;
+		}
+		&:focus{
+			border-color: #292ef0;
+		}
+		&:invalid:not(:placeholder-shown) {
+			border-color: red;
+		}
+		&:valid:not(:placeholder-shown) {
+			border-color: green;
+		}
+	}
+	&__two{
+		float: right;
+	}
+	&__btn{
+		font-size: 1.8rem;
+		background-color: #EA355A;
+		width: 100%;
+		color: #fff;
+		padding: 15px 5px;
+		border-radius: 7px;
+	}
+	&__foot{
+		font-size: 1.2rem;
+		margin-top: 40px;
+		text-align: center;
+	}
+}
